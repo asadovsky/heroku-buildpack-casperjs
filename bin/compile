@@ -37,7 +37,7 @@ fetch phantomjs phantomjs-1.9.7-linux-x86_64 -xjf https://bitbucket.org/ariya/ph
 
 fetch casperjs casperjs-1.1-beta3 -xzf https://github.com/n1k0/casperjs/archive/1.1-beta3.tar.gz
 
-echo "-----> Writing .profile.d/casperjs.sh"
+echo "-----> Writing ${BUILD_DIR}/.profile.d/casperjs.sh"
 
 mkdir -p ${BUILD_DIR}/.profile.d
 cp ${BIN_DIR}/casperjs.sh ${BUILD_DIR}/.profile.d/
